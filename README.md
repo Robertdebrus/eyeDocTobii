@@ -1,6 +1,8 @@
 # eyeDocTobii
 Prerequisites:
-Firefox Bash on Ubuntu on Windows Python
+Firefox 
+Bash on Ubuntu on Windows 
+Python
 
 1. Installation:
 Install Tobii from https://tobiigaming.com/getstarted/
