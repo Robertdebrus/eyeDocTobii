@@ -1,0 +1,75 @@
+Can't detect winks.
+Can detect blinks, but do to the eye's natural movement whilst blinking, it is very hard to get an accurate reading
+Use eyeTribe to detect winks, Tobii for coords?
+
+
+Blink Code: 
+
+function gazeClick() {
+    "use strict";
+    getCoordinates();
+    blinkX = xCoords;
+    blinkY = yCoords;
+    
+    if (preBlinkX / blinkX === 1 && preBlinkY / blinkY === 1) {
+        getCoordinates();
+        blinkX = xCoords;
+        blinkY = yCoords;
+        if (preBlinkX + 20 > blinkX && preBlinkX - 20 < blinkX && preBlinkY + 20 > blinkY && preBlinkY - 20 < blinkY) {
+            var elem = document.elementFromPoint((((preBlinkX - 80) + (blinkX - 80)) / 2),(((preBlinkY - 80) + (blinkY - 80)) / 2));
+            if (elem === null){
+                elem = 10;
+            } else {
+                console.log("blinked, clicked on " + elem);
+                setColor(elem,"Chartreuse");
+                elem.click();   
+            }
+        }
+    }
+}
+
+
+Hovering?
+    Need  to detect when the eyecoords stay around the same values for +- 2s, then click.
+    
+    var elem = document.elementFromPoint((((preBlinkX) + (blinkX)) / 2),(((preBlinkY - 80) + (blinkY - 80)) / 2));
+                console.log((preBlinkX) + " + " + (blinkX) + " / 2 = " + (((preBlinkX) + (blinkX)) / 2));
+                if (elem === null){
+                    elem = 10;
+                } else {
+                    console.log("blinked, clicked on " + elem);
+                    setColor(elem,"Chartreuse");
+                    elem.click();   
+                }
+                
+                
+                
+                function gazeClick() {
+    "use strict"; 
+    var w = 0;
+    var yval = 0;
+    for (var i = 0; i < 60; i ++) {
+        getCoordinatesA();
+        blinkX = xCoords;
+        blinkY = yCoords;
+        if (newCoords === true && preBlinkX + 15 > blinkX && preBlinkX - 15 < blinkX && preBlinkY + 15 > blinkY && preBlinkY - 15 < blinkY) {
+            newCoords = false;
+            w = w + 1;
+            yval += blinkY; 
+            console.log(w);
+        }
+        if (w === 20){
+            w = 0;
+            var elem = document.elementFromPoint((((preBlinkX) + (blinkX)) / 2),(yval / 20));
+            yval = 0;
+            if (elem === null){
+                elem = 10;
+            } else {
+                console.log("clicked on " + elem);
+                setColor(elem,"Chartreuse");
+                elem.click();   
+            location.reload();
+            }
+        }
+    }
+}

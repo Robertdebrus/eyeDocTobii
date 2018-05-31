@@ -1,0 +1,118 @@
+/* Javadoc style sheet */
+
+/* Define colors, fonts and other style attributes here to override the defaults */
+
+/* Page background color */
+body { background-color: #FFFFFF; color:#000000 }
+
+/* Headings */
+h1 { font-size: 145% }
+
+/* Table colors */
+.TableHeadingColor     { background: #CCCCFF; color:#000000 } /* Dark mauve */
+.TableSubHeadingColor  { background: #EEEEFF; color:#000000 } /* Light mauve */
+.TableRowColor         { background: #FFFFFF; color:#000000 } /* White */
+
+/* Font used in left-hand frame lists */
+.FrameTitleFont   { font-size: 100%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
+.FrameHeadingFont { font-size:  90%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
+.FrameItemFont    { font-size:  90%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
+
+/* Navigation bar fonts and colors */
+.NavBarCell1    { background-color:#EEEEFF; color:#000000} /* Light mauve */
+.NavBarCell1Rev { background-color:#00008B; color:#FFFFFF} /* Dark Blue */
+.NavBarFont1    { font-family: Arial, Helvetica, sans-serif; color:#000000;color:#000000;}
+.NavBarFont1Rev { font-family: Arial, Helvetica, sans-serif; color:#FFFFFF;color:#FFFFFF;}
+
+.NavBarCell2    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF; color:#000000}
+.NavBarCell3    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF; color:#000000}
+
+
+/* Top Right */
+.canvas-main-2 {
+    width: 10%;
+    height: 13%;
+	position:fixed;
+/* 	margin-left:1082px;
+	margin-top:296px; */
+	margin-left:88.5%;
+	margin-top:30%;
+	box-shadow:2px 2px 5px #888888;
+}
+
+/* Bottom Right */
+.canvas-main-1 {
+    width: 10%;
+    height: 13%;
+	position:fixed;
+	margin-left:88.5%;
+	margin-top:69.5%;
+	box-shadow:2px 2px 5px #888888;
+}
+/* Top Left */
+.canvas-main-3 {
+	background-color: #ccc1;
+    width: 10%;
+    height: 13%px;
+	position:fixed;
+	margin-left:1px;
+	margin-top:1px;
+}
+/* Bottom Top Left */
+.canvas-main-4 {
+	background-color: #ccc1;
+    width: 10%;
+    height: 13%px;
+	position:fixed;
+	margin-left:1px;
+	margin-top:1px;
+}
+/* Top Bottom Left */
+.canvas-main-5 {
+	background-color: #ccc1;
+    width: 10%;
+    height: 13%px;
+	position:fixed;
+	margin-left:160px;
+	margin-top:300px;
+}
+/* Bottom Left */
+.canvas-main-6 {
+    width: 10%;
+    height: 13%px;
+	position:fixed;
+	margin-left:160px;
+	box-shadow:2px 2px 5px #888888;
+	margin-top:596px;
+}
+
+.canvases {	
+	background-color: #ccc1;
+	box-shadow:2px 2px 5px #888888;
+
+}
+/* Back */
+.canvas-back {
+    width: 10%;
+    height: 13%;
+	position:fixed;
+	margin-left:88.5%;
+	margin-top:10px;
+	box-shadow:2px 2px 5px #888888;
+}
+
+.canvas-circles {
+    width: 1200px;
+    height: 700px;
+	margin-left:160px;
+}
+/*
+#info2 {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 25px 50px;
+}
+ */
