@@ -19,4 +19,4 @@ Activate CORS Everywhere
 
 3. Usage:
 Stare at link until it turns red to click                             
-Stare at boxes to scroll thier windows up or down, or ge back a page
+Stare at boxes to scroll thier windows up or down, or go back a page
